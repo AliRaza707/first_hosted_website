@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .mynav-anchor
+        {
+            display: flex;
+            margin-left: 10px;
+        }
+        #logo-name
+        {
+            margin: 10px 0px 0px 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .mynav-spaces,.dropdown
+        {
+            margin-right: 10px;
+            border-radius: 30px;
+        }
+        .mycolorforbutons
+        {
+            background-color:rgb(57, 57, 253);
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+        
+        .mynavbar
+        {
+            box-shadow: 10px 1px 10px  black;
+        }
+        .container
+        {
+            padding: 3px;
+            
+        }
+        .col,.row
+        {
+            margin: 3px;
+            width: 100%;
+
+        }
+        
+        .MYimg-resize
+        {
+            width: 100%;
+            height: 100px;
+            border: rgb(255, 255, 255) 2px solid;
+            border-radius: 6px;
+        
+        }
+        .Mycarosel-imgSize
+        {
+            width: 100%;
+            height: 300px;
+            
+        }
+        .firstbox,.secondbox
+        {
+            width: 100px;
+            height: 100px;
+            position: relative;     
+            background-color: aqua;  
+         }
+         #p-text
+         {
+            color:rgb(255, 255, 255) ;
+            font-weight: light;
+            font-size: 90px;
+            
+         }
+         #s-text
+         {
+            color: white;
+         }
+         #l-text
+         {
+            text-align: end;
+            color: white;
+         }
+         .text
+         {
+            background-color: rgb(57, 57, 253);
+            padding: 5%;
+            border-radius:0px 30px 0px 30px ;
+         }
+         
+
+         
+        
+    </style>
+</head>
+<body style="background-color: white;">
+    <header>
+        <nav class="navbar mynavbar">
+            <div class="mydiv"> <!--left part of header-->
+            <a class="navbar-brand mynav-anchor" href="#">
+                <img style="border-radius: 100px;" src="82c65b9bb0a75026fc4c82a438b4cc9b.jpg" alt="Logo" width="50" height="44" class="d-inline-block align-text-top">
+              <p id="logo-name">ANDROMEDA.CO</p>
+            </a>
+            </div> <!--right part of header-->
+            <div>
+                <ul class="nav nav-pills ">
+                    <li class="nav-item "> 
+                      <a class="nav-link mycolorforbutons mynav-spaces" aria-current="page" href="#">HOME</a> <!--using mynav-spaces to make margin btw 3 buttons-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mycolorforbutons mynav-spaces" aria-current="page" href="#">PRODUCTS</a>
+                      </li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary mycolorforbutons dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          MORE
+                        </button>
+                    <ul class="dropdown-menu" >
+                          <li><a class="dropdown-item" href="#">CONTACTS</a></li>
+                          <li><a class="dropdown-item" href="#">CAREERS</a></li>
+                          <li><a class="dropdown-item" href="#">LEGAL</a></li>
+                        </ul>
+                    </div>
+                    
+                    
+                  </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col"><!--first column-->
+                    <div class="text">
+                        <h5 id="s-text">Explore Space with</h5>
+                        <h1 id="p-text">Professional</h1>
+                        <h6 id="l-text">State of The Art Equipment<h6>
+                    </div>
+
+                    <div class="row" style="margin-top: 10%;">
+                       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsa, mollitia obcaecati fugit numquam eos dolorem modi soluta iste culpa nulla explicabo sit recusandae rerum, reprehenderit expedita sequi. Aperiam placeat accusantium praesentium officiis dolorem reprehenderit beatae corrupti minima, nisi eligendi natus quo velit, dolor hic qui repellendus laborum repellat perspiciatis?</p>
+                       <p style="margin-top: 5%;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsa, mollitia obcaecati fugit numquam eos dolorem modi soluta iste culpa </p>
+
+                    </div>
+                    
+                </div>
+                <div class="col"><!--second column-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col"><img class="MYimg-resize" src="https://media.istockphoto.com/id/1353863644/photo/hubble-telescope-on-orbit-of-earth-space-observatory-telescope-in-outer-space-near-surface-of.jpg?s=612x612&w=0&k=20&c=jiaj5HDIIk7OxnoqoHWPBnhEFklbARqfXgl7YKkHtZM=" alt=""></div>
+                            <div class="col"><img class="MYimg-resize" src="https://lh3.googleusercontent.com/proxy/8WQIavL_EqU57-Wr8wnRVcTkTf1rvzuiOd5gYGIdx_p0gWMTzvGVK71GqsmwuDSJMH-z438-00oOExGF1ZB62O-KTkN2wgirvthrDvZF6WU7IUpI0kmf-LUY9bcDRaTp2KSfU90O6sB5oe6L7wEueMvaPXHQH2uera-o6TOS_QAtPh1VL0YKMHP3xiL9SXc" alt=""></div>
+                            <div class="col"><img class="MYimg-resize" src="https://m.media-amazon.com/images/I/61AlIlz-dGL._AC_UF350,350_QL80_.jpg" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col my-carosel">
+                                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img class="Mycarosel-imgSize" src="https://c02.purpledshub.com/uploads/sites/48/2020/01/06_BrianCummins_AndromedaGalaxy-a8d75a0-e1616074453615.jpg?webp=1&w=1200" class="d-block w-100" alt="..." height="20%" width="100%">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="Mycarosel-imgSize" src="https://www.cnet.com/a/img/resize/ac707eb28cd26460abfbd61993e25c9e836118fb/hub/2022/11/30/e012375d-5a54-48e7-9c67-774326265d63/webbpillarscompositestsci-01gk2kpefxg7m98jc28rxs66cz.jpg?auto=webp&width=1920
+                                        " class="d-block w-100" alt="..." height="20%" width="100%" >
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="Mycarosel-imgSize" src="https://c02.purpledshub.com/uploads/sites/48/2019/10/Andromeda-M31-Galaxy-cannibal-stars-9566143.jpg?w=1029&webp=1" class="d-block w-100" alt="..." height="20%" width="100%">
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                                
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col"><img class="MYimg-resize" src="https://isp.today/wp-content/uploads/2024/01/compressed_img-b0gQTldUaxUxZb4Yd83riaei.png" alt=""></div>
+                            <div class="col"><img class="MYimg-resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnj2NZfWfi8b6fiOS0WDqcecsvF6-K4I2S5g&usqp=CAU" alt=""></div>
+                            <div class="col"><img class="MYimg-resize" src="https://www.ntu.ac.uk/__data/assets/image/0038/1992098/PRP-NTU-34061.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
